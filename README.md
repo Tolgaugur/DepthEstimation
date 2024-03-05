@@ -4,7 +4,13 @@ This project is a Python-based application that uses the ZoeDepth model from the
 
 ## Usage/Examples
 
+| Example Photo | Output        |
+| ------------- | ------------- |
+| ![pexels-peng-liu-169647](https://github.com/Tolgaugur/DepthEstimation/assets/29550889/e92f402d-b2cf-4958-ad56-9667dc6214ae)  |  ![bffe9859ec12](https://github.com/Tolgaugur/DepthEstimation/assets/29550889/676a742f-ec90-43fd-88a6-717c8194f4ae)  |
+
 ### CLI Usage
+
+
 
 ```bash
 usage: climenu.py [-h] input_image output_image

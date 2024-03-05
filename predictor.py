@@ -35,5 +35,5 @@ class DepthEstimationModel:
         return f"Colorized depth map saved at {output_path}"
 
 
-model = DepthEstimationModel()
-model.calculate_depth_map("./outputs/image.png", "./outputs/output.png")
+# model = DepthEstimationModel()
+# model.calculate_depth_map("./outputs/image.png", "./outputs/output.png")

@@ -1,4 +1,4 @@
-# Zoe Depth Estimation
+# ZoeDepth Estimation
 
 This project is a Python-based application that uses the ZoeDepth model from the [isl-org](https://github.com/isl-org/ZoeDepth) repository for depth estimation in images.
 
@@ -12,10 +12,8 @@ This project is a Python-based application that uses the ZoeDepth model from the
 
 
 
-```bash
+```text
 usage: climenu.py [-h] input_image output_image
-
-Depth Estimation with ZoeDepth
 
 positional arguments:
     input_image     Path to input image.
@@ -33,7 +31,7 @@ http://127.0.0.1:8064/predict
 
 ## Installation
 
-Install DepthEstimation with pip
+Install the required libraries with pip
 
 ```bash
 pip install -r requirements.txt
@@ -41,9 +39,11 @@ pip install -r requirements.txt
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+To run this project, you will need to add the following environment variable to your .env file:
 
 `IMAGE_API_KEY`
+
+(You can generate your own API key from [here](https://api.imgbb.com/) )
 
 ## Deployment
 

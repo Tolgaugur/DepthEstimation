@@ -36,4 +36,4 @@ class DepthEstimationModel:
 
 
 model = DepthEstimationModel()
-model.calculate_depth_map("image.png", "output.png")
+model.calculate_depth_map("./outputs/image.png", "./outputs/output.png")

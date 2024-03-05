@@ -2,6 +2,7 @@ from fastapi import FastAPI, File, UploadFile
 from predictor import DepthEstimationModel
 import os
 import uuid
+from upload import upload_image_to_imgbb
 
 app = FastAPI()
 depth_estimator = DepthEstimationModel()
@@ -27,11 +28,7 @@ async def predict(file: UploadFile = File(...)):
             image_data.write(file.file.read())
 
         depth_estimator.calculate_depth_map(destination_path, output_path)
-        return {
-            "OK": "Image processed successfully. Check the output at /outputs/"
-            + "output"
-            + filename_base
-            + ".png}"
-        }
+        response = upload_image_to_imgbb(output_path)
+        return response
     except Exception as e:
         return {"error": str(e)}
